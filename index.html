@@ -10,6 +10,7 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6d0276a161.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather App</title>
 </head>
 
@@ -22,19 +23,19 @@
                 </div>
 
                 <div class="col-3 second-col">
-                    <span class="big-temperature">21 </span> <span class="units">°C | <a href="#">°F</a></span>
+                    <span class="big-temperature" id="big-temperature">21 </span> <span class="units">°C | <a
+                            href="#">°F</a></span>
                 </div>
                 <div class="col-3">
-                    <div class="extra-info">Precipitation: 77%</div>
-                    <div class="extra-info">Humidity: 40%</div>
-                    <div class="extra-info">Wind: 13 km/h</div>
+                    <div class="extra-info">Humidity: <span id="humidity"></span>%</div>
+                    <div class="extra-info">Wind: <span id="wind"></span> km/h</div>
                 </div>
 
 
                 <div class="col-3  ">
-                    <div class="city general-info">Berlin</div>
+                    <div class="city general-info" id="requested-city">Berlin</div>
                     <div class="general-info status">Saturday, 14:30</div>
-                    <div class="general-info status">Sunny</div>
+                    <div class="general-info status" id="description">Sunny</div>
                 </div>
 
             </div>

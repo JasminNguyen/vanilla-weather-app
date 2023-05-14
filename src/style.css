@@ -8,6 +8,8 @@
 
 .footer {
   text-align: center;
+  position: relative;
+  top: -20px;
 }
 
 .big-temperature {
@@ -83,4 +85,10 @@ li {
 
 li:first-letter {
   text-transform: capitalize;
+}
+
+.active {
+  color: black;
+  text-decoration: none;
+  cursor: default;
 }

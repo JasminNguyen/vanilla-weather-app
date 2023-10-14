@@ -106,3 +106,25 @@ li:first-letter {
 .weather-forecast-temperature-min {
   color: grey;
 }
+
+@media (max-width: 900px) {
+  .button {
+    position: relative;
+    left: -8px;
+  }
+
+  .col-3 {
+    position: relative;
+    left: 20px;
+  }
+  .extra-info {
+    position: relative;
+    left: 5px;
+  }
+  .units {
+    position: relative;
+    top: -12px;
+
+    font-size: 19px;
+  }
+}

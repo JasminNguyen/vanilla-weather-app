@@ -19,40 +19,42 @@
         <div class="weather-app">
             <form id="search-form">
                 <div class="row">
-                    <div class="col-10">
+                    <div class="col-9">
                         <input type="search" placeholder="Type a city" class="form-control" id="city-input">
                     </div>
                     <div class="col-1">
-                        <input type="submit" value="Search" class="btn btn-primary w-250">
+                        <input type="submit" value="Search" class="btn btn-primary w-250 button">
                     </div>
                 </div>
             </form>
             </br>
 
-            <div class="row">
-                <div class="col-2 d-flex weather-temperature"> <img src="" alt="" id="icon">
-                </div>
+            <div class="container-res">
+                <div class="row">
+                    <div class="col-2 d-flex weather-temperature"> <img src="" alt="" id="icon">
+                    </div>
 
-                <div class="col-3 second-col">
-                    <span class="big-temperature" id="big-temperature"> </span> <span class="units"><a href="#"
-                            class="active" id="celsius-link">°C </a>| <a href="#" id="fahrenheit-link">°F</a></span>
-                </div>
-                <div class="col-3">
-                    <div class="extra-info">Humidity: <span id="humidity"></span>%</div>
-                    <div class="extra-info">Wind: <span id="wind"></span> m/s</div>
-                </div>
+                    <div class="col-3 second-col">
+                        <span class="big-temperature" id="big-temperature"> </span> <span class="units"><a href="#"
+                                class="active" id="celsius-link">°C </a>| <a href="#" id="fahrenheit-link">°F</a></span>
+                    </div>
+                    <div class="col-3 d-none d-md-block">
+                        <div class="extra-info">Humidity: <span id="humidity"></span>%</div>
+                        <div class="extra-info">Wind: <span id="wind"></span> m/s</div>
+                    </div>
 
 
-                <div class="col-4  ">
-                    <div class="city general-info" id="requested-city">Berlin</div>
-                    <ul>
-                        <li class="general-info status">Last updated: <div id="date"></div>
-                        </li>
-                        <li class="general-info status capitalize" id="description"></li>
-                    </ul>
+                    <div class="col ">
+                        <div class="city general-info" id="requested-city">Berlin</div>
+                        <ul>
+                            <li class="general-info status">Last updated: <div id="date"></div>
+                            </li>
+                            <li class="general-info status capitalize" id="description"></li>
+                        </ul>
+                    </div>
                 </div>
-
             </div>
+
             <div class="weather-forecast" id="forecast"> </div>
 
 
